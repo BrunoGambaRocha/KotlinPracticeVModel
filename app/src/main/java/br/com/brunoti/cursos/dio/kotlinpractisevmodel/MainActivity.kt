@@ -26,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         initClick()
     }
 
+    private fun finalizarApp() {
+        finish()
+    }
+
     override fun onStart() {
         logar(valor = "onStart")
         super.onStart()
@@ -51,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
     }
 
-    private fun logar(tag: String = "Ciclo de Vida", valor: String){
+    private fun logar(tag: String = "Ciclo de Vida", valor: String) {
         Log.d(tag, valor)
     }
 
@@ -63,7 +67,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnMostrar.setOnClickListener{
-            Toast.makeText(this, "Valor Contador: ${contador.toString()}", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Valor Contador: ${contador.toString()}", Toast.LENGTH_SHORT).show()
+            finalizarApp()
         }
     }
 
