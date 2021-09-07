@@ -1,4 +1,4 @@
-# Kotlin Practise View Model
+# Kotlin Practice View Model
 
 <img src="screenshot.png"/>
 
